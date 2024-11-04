@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f14fce612339114aac3d8e8b81e737d48c11cc9a
 # Ventiloar - Sistema de Ventiladores em Série
 
 Bem-vindo ao repositório do site oficial da **Ventiloar**. Este projeto é uma página de apresentação (SPA/Landing Page) desenvolvida para apresentar a inovação da Ventiloar no setor de ventilação industrial e comercial.
