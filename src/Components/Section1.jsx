@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import ImgSection1 from "../assets/Images/img-section1.png"
+import NavBar from "./NavBar";
 
 // Breakpoints padrão recomendados para React
 const breakpoints = {
@@ -16,7 +17,7 @@ const DivSection1 = styled.div`
     justify-content: center;
     align-items: center; 
     width: 100%;
-    height: 90vh;
+    height: 95vh;
 `
 
 const DivText = styled.div`
@@ -70,23 +71,33 @@ const Button = styled.button`
     font-family: 'Impact', sans-serif;
     font-size: 1.5rem;
     border: none;
+    cursor: pointer; /* Define o cursor como pointer */
     border-radius: 0.3rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+
+    &:hover {
+    background-color: #161E41; /* Cor ao passar o mouse */
+    color: white;
+    transform: scale(1.05); /* Aumenta o botão levemente */
+}
 `
 
 const Section1 = () => {
   return (
-    <DivSection1>
-        <DivText>
-            <Title>A solução que reduz seu consumo de energia em 90%</Title>
-            <Paragraph>Uma introdução ao Sistema de Ventiladores em Série e sua inovação no mercado,<SpanColor> revolucionando a Ventilação com Economia e Sustentabilidade</SpanColor></Paragraph>
-            <Button>conheça sobre</Button>
-        </DivText>
+    <>
+        <DivSection1>
+            <NavBar />
+            <DivText>
+                <Title>A solução que reduz seu consumo de energia em 90%</Title>
+                <Paragraph>Uma introdução ao Sistema de Ventiladores em Série e sua inovação no mercado,<SpanColor> revolucionando a Ventilação com Economia e Sustentabilidade</SpanColor></Paragraph>
+                <Button>Conheça sobre</Button>
+            </DivText>
 
-        <DivImage>
-            <img src={ImgSection1} />
-        </DivImage>
-    </DivSection1>
-    
+            <DivImage>
+                <img src={ImgSection1} />
+            </DivImage>
+        </DivSection1>
+    </>
   )
 }
 
