@@ -42,6 +42,7 @@ const DivSection1 = styled.div`
     align-items: center; 
     width: 100%;
     height: 95vh;
+    background-color: #000A35;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         width: 100%;
@@ -123,9 +124,7 @@ const DivText = styled.div`
         }
     }
 
-    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        width: 100%
-    }
+
 
     /* Medium devices (tablets, 960px and up) */
     @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
@@ -147,6 +146,7 @@ const Title = styled.h1`
         padding: 0 1rem 0 1rem;
         margin-top: 3rem;
         z-index: 10;
+        font-size: 3rem;
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
@@ -166,7 +166,7 @@ const Title = styled.h1`
 
 `
 
-const Paragraph = styled.h1`
+const Paragraph = styled.p`
     font-size: 1.5rem;
     text-align: justify;
     line-height: 1;
@@ -176,6 +176,10 @@ const Paragraph = styled.h1`
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         padding: 0 1rem 0 1rem;
         z-index: 10;
+        font-size: 1rem;
+        text-align: left;
+
+
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
@@ -220,7 +224,10 @@ const DivImage = styled.div`
     @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
         width: 40%;
         height: 100%;
+        transform: translateX(40px); /* Ajuste o valor conforme necessário */
     }
+
+    
 `
 
 const ImagemS1 = styled.img`
@@ -239,7 +246,8 @@ const ImagemS1 = styled.img`
     /* Medium devices (tablets, 960px and up) */
     @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
         height: 100%;
-        transform: translateX(6rem); /* Ajuste o valor conforme necessário */
+        transform: translateX(40px); /* Ajuste o valor conforme necessário */
+
     }
    
 
@@ -265,7 +273,9 @@ const Button = styled.button`
     };
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        margin: 0.5rem 3rem 0 1rem;
+        margin: 0.5rem 1rem 0 1rem;
+        width: 60%;
+
 
     }
 
