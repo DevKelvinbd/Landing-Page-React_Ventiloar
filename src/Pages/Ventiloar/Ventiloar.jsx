@@ -1,11 +1,12 @@
 import React from 'react'
 import Section1 from '../../Components/Section1'
+import Section2 from '../../Components/Section2'
 
 const Ventiloar = () => {
   return (
     <>
         <Section1 />
-        <div style={{width:'100%', height: '100vh'}}>kekekekeke</div>
+        <Section2 />
     </>
   )
 }
