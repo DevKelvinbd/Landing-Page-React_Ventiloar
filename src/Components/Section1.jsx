@@ -7,7 +7,7 @@ import LogoVentiloar from '../assets/Images/LogoVentiloar.svg'
 // Breakpoints padrão recomendados para React
 const breakpoints = {
     xs: '320px',         // Extra small devices (mobile phones, less than 600px)
-    sm: '600px',       // Small devices (small tablets and large phones, 600px and up)
+    sm: '598px',       // Small devices (small tablets and large phones, 600px and up)
     md: '960px',       // Medium devices (tablets, 960px and up)
     lg: '1200px',      // Large devices (desktops, 1280px and up)
     xl: '1920px'       // Extra large devices (large desktops and TVs, 1920px and up)
