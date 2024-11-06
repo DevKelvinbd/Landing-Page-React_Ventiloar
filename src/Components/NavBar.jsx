@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import LogoVentiloar from '../assets/Images/LogoVentiloar.svg'
+import FlagBrasil from '../assets/Images/flag-brasil.svg'
+import FlagEua from '../assets/Images/flag-eua.svg'
 
 const breakpoints = {
     xs: '320px',         // Extra small devices (mobile phones, less than 600px)
@@ -13,16 +15,17 @@ const breakpoints = {
 // Container da Navbar
 const NavbarContainer = styled.nav`
     position: absolute; /* Fixa a navbar no topo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     width: 89%;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
+    margin: 1rem 0rem;
     z-index: 1000; /* Garante que fique acima de outros elementos */
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        display: none; 
+        padding: 0 0 0 1rem;
     }
 `;
 
@@ -31,11 +34,12 @@ const NavbarContainer = styled.nav`
 const NavLinks = styled.ul`
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 0.5rem;
+    padding: 0;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        display: none;
-        gap: 0rem;
+        // display: none;
+        // gap: 0rem;
     }
 `;
 
@@ -81,6 +85,7 @@ const NavLink = styled.li`
 
 const Image = styled.img`
 
+
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         width: 60%;
         position: relative;
@@ -95,6 +100,8 @@ const Image = styled.img`
     /* Medium devices (tablets, 960px and up) */
     @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
         width: 25%;
+        // margin-left: 1.5rem; 
+
     }
 
     /* Large devices (desktops, 1280px and up) */
@@ -106,6 +113,10 @@ const Image = styled.img`
     @media (min-width: ${breakpoints.xl}) {
         width: 15%;
     }
+`
+
+const ImgIconFlag = styled.img`
+// margin: 0 0.5rem 0 0 ;
 `;
 
 const NavBar = () => {
@@ -114,10 +125,8 @@ const NavBar = () => {
     <NavbarContainer>
         <Image src={LogoVentiloar} />
         <NavLinks>
-            <NavLink>Sobre</NavLink>
-            <NavLink>Solução</NavLink>
-            <NavLink>Diferenciais</NavLink>
-            <NavLink>Contato</NavLink>
+            <ImgIconFlag src={FlagBrasil} />
+            <ImgIconFlag src={FlagEua} />
         </NavLinks>
     </NavbarContainer>
   )

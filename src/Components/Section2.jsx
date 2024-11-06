@@ -14,7 +14,7 @@ const DivSection2 = styled.div`
     justify-content: center;
     align-items: center; 
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-color: #E1F0FD;
     flex-direction: row;
 

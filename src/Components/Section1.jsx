@@ -3,6 +3,8 @@ import ImgSection1 from "../assets/Images/img-section1.png"
 import ImgVentiladores from "../assets/Images/ventiladores.png"
 import NavBar from "./NavBar";
 import LogoVentiloar from '../assets/Images/LogoVentiloar.svg'
+import FlagBrasil from '../assets/Images/flag-brasil.svg'
+import FlagEua from '../assets/Images/flag-eua.svg'
 
 // Breakpoints padrão recomendados para React
 const breakpoints = {
@@ -42,7 +44,7 @@ const DivSection1 = styled.div`
     justify-content: center;
     align-items: center; 
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-color: #000A35;
     z-index: 1; /* Coloca a seção abaixo da NavBar */
 
@@ -168,7 +170,6 @@ const Title = styled.h1`
         padding: 0 2rem 0 3rem;
 
     }
-
 `
 
 const Paragraph = styled.p`
@@ -328,15 +329,61 @@ const Image = styled.img`
     @media (min-width: ${breakpoints.xl}) {
         display: none;
     }
+`
+
+const NavLinks = styled.ul`
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0;
+        /* Small devices (small tablets and large phones, 600px and up) */
+    @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
+        display: none;
+
+    }
+
+    /* Medium devices (tablets, 960px and up) */
+    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
+        display: none;
+
+    }
+
+    /* Large devices (desktops, 1280px and up) */
+    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
+        display: none;
+    }
+
+    /* Extra large devices (large desktops and TVs, 1920px and up) */
+    @media (min-width: ${breakpoints.xl}) {
+        display: none;
+    }   
+
+`;
+
+const Icons = styled.div`
+    display: flex;
+    // width: 10%;
+    height: auto;
+`
+
+const ImgIconFlag = styled.img`
+
 `;
 
 const Section1 = () => {
   return (
-    <>
+    <>  
         <DivSection1>
             <NavBar />
             <DivText>
-            <Image src={LogoVentiloar} />
+            {/* <NavLinks>
+                <Image src={LogoVentiloar} />
+                <Icons>
+                    <ImgIconFlag src={FlagBrasil} />
+                    <ImgIconFlag src={FlagEua} />
+                </Icons>
+            </NavLinks> */}
                 <Title>A solução que reduz seu consumo de energia em 90%</Title>
                 <Paragraph>Uma introdução ao Sistema de Ventiladores em Série e sua inovação no mercado,<SpanColor> revolucionando a Ventilação com Economia e Sustentabilidade</SpanColor></Paragraph>
                 <Button>Conheça sobre</Button>
