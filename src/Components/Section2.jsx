@@ -1,6 +1,14 @@
 import styled from "styled-components"
 import ImgSection2 from '../assets/Images/ImgSection2.png'
 
+const breakpoints = {
+    xs: '320px',         // Extra small devices (mobile phones, less than 600px)
+    sm: '600px',       // Small devices (small tablets and large phones, 600px and up)
+    md: '960px',       // Medium devices (tablets, 960px and up)
+    lg: '1200px',      // Large devices (desktops, 1280px and up)
+    xl: '1920px'       // Extra large devices (large desktops and TVs, 1920px and up)
+  };
+
 const DivSection2 = styled.div`
     display: flex;
     justify-content: center;
@@ -8,22 +16,86 @@ const DivSection2 = styled.div`
     width: 100%;
     height: 95vh;
     background-color: #E1F0FD;
+    flex-direction: row;
+
+    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Small devices (small tablets and large phones, 600px and up) */
+    @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
+        flex-direction: column;
+    }
+
+    /* Medium devices (tablets, 960px and up) */
+    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
+        
+    }
+
+    /* Large devices (desktops, 1280px and up) */
+    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
+    
+    }
 
 `
 
 const DivImage = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     width: 40%;
     height: 100%;
     background-color: #E1F0FD;
+
+    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+        display: none;
+    }
+
+    /* Small devices (small tablets and large phones, 600px and up) */
+    @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
+        display: none;
+    }
+
+    /* Medium devices (tablets, 960px and up) */
+    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
+        width: 40%;
+    }
+
+    /* Large devices (desktops, 1280px and up) */
+    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
+    
+    }
 `
 
 const ImagemS2 = styled.img`
     height: 80%;
     width: auto;
     margin-left: 3rem; 
+
+    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+
+    }
+
+    /* Small devices (small tablets and large phones, 600px and up) */
+    @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
+        width: 100%;
+        height: auto;
+        // padding-right: 2rem; 
+        transform: rotate(90deg); /* Rotaciona a imagem em 90 graus no sentido horário */
+    }
+
+    /* Medium devices (tablets, 960px and up) */
+    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
+        width: auto;
+        margin-left: 1rem; 
+        
+    }
+
+    /* Large devices (desktops, 1280px and up) */
+    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
+    
+    }
 `
 
 const SpanColor = styled.span`
@@ -41,6 +113,27 @@ const DivText = styled.div`
     height: 80%;
     background-color: #E1F0FD;
 
+    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    /* Small devices (small tablets and large phones, 600px and up) */
+    @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
+        width: 100%;
+        margin: 5rem 0;
+    }
+
+    /* Medium devices (tablets, 960px and up) */
+    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
+        width: 60%;
+    }
+
+    /* Large devices (desktops, 1280px and up) */
+    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
+    
+    }
+
 `
 
 const Title = styled.h1`
@@ -51,6 +144,26 @@ const Title = styled.h1`
     line-height: 1;
     font-family: 'Impact', sans-serif;
     color: #000A35;
+
+    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    /* Small devices (small tablets and large phones, 600px and up) */
+    @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
+        padding: 1rem 3rem 0 3rem;          
+    }
+
+    /* Medium devices (tablets, 960px and up) */
+    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
+        font-size: 2.2rem;
+        padding: 0 2rem 1rem 1rem;          
+    }
+
+    /* Large devices (desktops, 1280px and up) */
+    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
+    
+    }
 `
 
 const Paragraph = styled.p`
@@ -61,6 +174,29 @@ const Paragraph = styled.p`
     padding: 0 5em 0 3rem;
     margin: 1rem 0 0 0;
     color: #000A35;
+
+    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+        padding: 0rem 1rem 0rem 1rem;
+        font-size: 0.9rem;
+
+    }
+
+    /* Small devices (small tablets and large phones, 600px and up) */
+    @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
+        padding: 0 3rem 0 3rem;           
+    }
+
+    /* Medium devices (tablets, 960px and up) */
+    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
+        font-size: 1rem;
+        padding: 0 3rem 0 1rem;          
+       
+    }
+
+    /* Large devices (desktops, 1200px and up) */
+    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
+    
+    }
 
 `
 
