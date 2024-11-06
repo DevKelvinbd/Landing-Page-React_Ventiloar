@@ -19,7 +19,8 @@ const DivSection2 = styled.div`
     flex-direction: row;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-
+        flex-direction: column;
+        height: auto;
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
@@ -48,7 +49,7 @@ const DivImage = styled.div`
     background-color: #E1F0FD;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-
+        display: none;
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
@@ -113,7 +114,8 @@ const DivText = styled.div`
     background-color: #E1F0FD;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-
+        width: 100%;
+        margin: 2rem 0;
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
@@ -144,7 +146,7 @@ const Title = styled.h1`
     color: #000A35;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-
+        padding: 0.5rem 1rem 0.5rem 1rem;
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
@@ -155,7 +157,7 @@ const Title = styled.h1`
     /* Medium devices (tablets, 960px and up) */
     @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
         font-size: 2.2rem;
-        padding: 0 2rem 0 1rem;          
+        padding: 0 2rem 1rem 1rem;          
     }
 
     /* Large devices (desktops, 1280px and up) */
@@ -174,6 +176,8 @@ const Paragraph = styled.p`
     color: #000A35;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+        padding: 0rem 1rem 0rem 1rem;
+        font-size: 0.9rem;
 
     }
 
