@@ -2,6 +2,7 @@ import styled from "styled-components"
 import ImgSection1 from "../assets/Images/img-section1.png"
 import ImgVentiladores from "../assets/Images/ventiladores.png"
 import NavBar from "./NavBar";
+import LogoVentiloar from '../assets/Images/LogoVentiloar.svg'
 
 // Breakpoints padrão recomendados para React
 const breakpoints = {
@@ -43,9 +44,13 @@ const DivSection1 = styled.div`
     width: 100%;
     height: 95vh;
     background-color: #000A35;
+    z-index: 1; /* Coloca a seção abaixo da NavBar */
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; 
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
@@ -295,12 +300,43 @@ const Button = styled.button`
 }
 `
 
+const Image = styled.img`
+
+    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+        width: 60%;
+        margin: 0 0rem 0 1rem;
+    }
+
+    /* Small devices (small tablets and large phones, 600px and up) */
+    @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
+        display: none;
+
+    }
+
+    /* Medium devices (tablets, 960px and up) */
+    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
+        display: none;
+
+    }
+
+    /* Large devices (desktops, 1280px and up) */
+    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
+        display: none;
+    }
+
+    /* Extra large devices (large desktops and TVs, 1920px and up) */
+    @media (min-width: ${breakpoints.xl}) {
+        display: none;
+    }
+`;
+
 const Section1 = () => {
   return (
     <>
         <DivSection1>
             <NavBar />
             <DivText>
+            <Image src={LogoVentiloar} />
                 <Title>A solução que reduz seu consumo de energia em 90%</Title>
                 <Paragraph>Uma introdução ao Sistema de Ventiladores em Série e sua inovação no mercado,<SpanColor> revolucionando a Ventilação com Economia e Sustentabilidade</SpanColor></Paragraph>
                 <Button>Conheça sobre</Button>

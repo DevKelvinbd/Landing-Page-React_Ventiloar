@@ -20,16 +20,12 @@ const NavbarContainer = styled.nav`
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 1000; /* Garante que fique acima de outros elementos */
+
+    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+        display: none; 
+    }
 `;
 
-// Estilo para o logo
-const Logo = styled.div`
-    font-family: 'Impact', sans-serif;
-    font-size: 1.8rem;
-    color: #fff;
-    cursor: pointer;
-    align-items: start;
-`;
 
 // Estilo para os links de navegação
 const NavLinks = styled.ul`
@@ -38,7 +34,8 @@ const NavLinks = styled.ul`
     gap: 2rem;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        visibility: hidden;
+        display: none;
+        gap: 0rem;
     }
 `;
 
@@ -51,11 +48,12 @@ const NavLink = styled.li`
     transition: color 0.3s ease;
 
     &:hover {
-        color: #45a049;
+        color: #62EAF9;
     }
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        visibility: hidden;
+        color: #fff;
+
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
@@ -84,7 +82,8 @@ const NavLink = styled.li`
 const Image = styled.img`
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        width: 50%;
+        width: 60%;
+        position: relative;
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
