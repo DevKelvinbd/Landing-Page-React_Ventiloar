@@ -9,7 +9,7 @@
 }
 
 img {
-    user-drag: none;      /* Para navegadores WebKit (Safari e Chrome) */
+   /* Para navegadores WebKit (Safari e Chrome) */
     -webkit-user-drag: none;
     pointer-events: none;  /* Também impede o clique e arrastar */  
 }
