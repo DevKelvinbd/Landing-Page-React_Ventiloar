@@ -14,7 +14,7 @@ const DivSection3 = styled.div`
     justify-content: center;
     align-items: center; 
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-color: #000A35;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
