@@ -3,7 +3,7 @@ import ImgSection2 from '../assets/Images/ImgSection2.png'
 
 const breakpoints = {
     xs: '320px',         // Extra small devices (mobile phones, less than 600px)
-    sm: '600px',       // Small devices (small tablets and large phones, 600px and up)
+    sm: '598px',       // Small devices (small tablets and large phones, 600px and up)
     md: '960px',       // Medium devices (tablets, 960px and up)
     lg: '1200px',      // Large devices (desktops, 1280px and up)
     xl: '1920px'       // Extra large devices (large desktops and TVs, 1920px and up)
@@ -21,11 +21,13 @@ const DivSection2 = styled.div`
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         flex-direction: column;
         height: auto;
+        padding: 6rem 0;
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
     @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
         flex-direction: column;
+        height: auto;
     }
 
     /* Medium devices (tablets, 960px and up) */
@@ -146,7 +148,8 @@ const Title = styled.h1`
     color: #000A35;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        padding: 0.5rem 1rem 0.5rem 1rem;
+        padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
@@ -176,9 +179,9 @@ const Paragraph = styled.p`
     color: #000A35;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        padding: 0rem 1rem 0rem 1rem;
+        padding: 0.5rem 2.5rem 0.5rem 2.5rem;
         font-size: 0.9rem;
-
+        margin: 0.3rem 0 0 0;
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
