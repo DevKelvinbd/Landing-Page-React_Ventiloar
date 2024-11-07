@@ -91,6 +91,8 @@ const ImagemS2 = styled.img`
     @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
         width: auto;
         margin-left: 1rem; 
+        height: 78%;
+
         
     }
 
@@ -141,20 +143,20 @@ const DivText = styled.div`
 const Title = styled.h1`
     font-size: 2.5rem;
     text-align: left;
-    padding: 0 5em 0 3rem;  
+    padding: 0 5em 1rem 3rem;  
     margin: 0;
     line-height: 1;
     font-family: 'Impact', sans-serif;
     color: #000A35;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+        padding: 0.5rem 2.5rem 01rem 2.5rem;
 
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
     @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
-        padding: 1rem 3rem 0 3rem;          
+        padding: 1rem 3rem 1rem 3rem;          
     }
 
     /* Medium devices (tablets, 960px and up) */
@@ -175,7 +177,7 @@ const Paragraph = styled.p`
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     padding: 0 5em 0 3rem;
-    margin: 1rem 0 0 0;
+    margin: 0rem 0 0 0;
     color: #000A35;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
@@ -203,19 +205,29 @@ const Paragraph = styled.p`
 
 `
 
+const Spacing = styled.div`
+    height: 1rem;
+`
+
 const Section2 = () => {
   return (
     <DivSection2>
         <DivImage>
-            <ImagemS2 src={ImgSection2} />
+            <ImagemS2 src={ImgSection2} alt="Imagem-Ventiladores-Em-Série" />
         </DivImage>
 
         <DivText>
             <Title>Sobre</Title>
-            <Paragraph>A <SpanColor>Ventiloar</SpanColor> trata-se de um <SpanColor>Sistema de Ventiladores em Série</SpanColor> que funciona com apenas 1 motor para várias hélices, movidos através de caixas de transmissão e cabos.</Paragraph>
-            <Paragraph>Uma solução muito <SpanColor>econômica</SpanColor> na aquisição dos equipamentos, instalação e <SpanColor>consumo de energia elétrica.</SpanColor></Paragraph>
-            <Paragraph>Conversa ndo com diversos empresários no Ceará, percebemos uma dor muito grande no setor de ventilação, academias que compram 10 ventiladores no início do ano, chegam no final com 4 ou 5, muitos acabam queimando, e precisam ser trocados.</Paragraph>
-            <Paragraph>Percebemos que as empresas <SpanColor>não colocam a quantidade adequada de ventiladores</SpanColor> no seu espaço, por medo do consumo excessivo da energia elétrico, resultando em um ambiente quente, com empresários frustrados e clientes insatisfeitos pelo mal serviço prestado no ambiente.</Paragraph>
+            <Paragraph>
+                A <SpanColor>Ventiloar</SpanColor> trata-se de um <SpanColor>Sistema de Ventiladores em Série</SpanColor> que funciona com apenas 1 motor para várias hélices, movidos através de caixas de transmissão e cabos.
+                <span style={{ display: 'block', marginBottom: '1rem' }}></span>
+                Uma solução muito <SpanColor>econômica</SpanColor> na aquisição dos equipamentos, instalação e <SpanColor>consumo de energia elétrica.</SpanColor>
+                <span style={{ display: 'block', marginBottom: '1rem' }}></span>
+                Conversando com diversos empresários no Ceará, percebemos uma dor muito grande no setor de ventilação, academias que compram 10 ventiladores no início do ano, chegam no final com 4 ou 5, muitos acabam queimando, e precisam ser trocados.
+                <span style={{ display: 'block', marginBottom: '1rem' }}></span>
+                Percebemos que as empresas <SpanColor>não colocam a quantidade adequada de ventiladores</SpanColor> no seu espaço, por medo do consumo excessivo da energia elétrico, resultando em um ambiente quente, com empresários frustrados e clientes insatisfeitos pelo mal serviço prestado no ambiente.
+            </Paragraph>
+            
         </DivText>
 
     </DivSection2>

@@ -85,7 +85,6 @@ const NavLink = styled.li`
 
 const Image = styled.img`
 
-
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         width: 60%;
         position: relative;
@@ -119,15 +118,20 @@ const ImgIconFlag = styled.img`
 // margin: 0 0.5rem 0 0 ;
 `;
 
+
+const DivIcons = styled.div`
+    display: flex;
+    gap: 0.5rem;
+`
 const NavBar = () => {
     
   return (
     <NavbarContainer>
-        <Image src={LogoVentiloar} />
-        <NavLinks>
-            <ImgIconFlag src={FlagBrasil} />
-            <ImgIconFlag src={FlagEua} />
-        </NavLinks>
+        <Image src={LogoVentiloar} alt='Logotipo-Ventiloar' />
+        <DivIcons>
+            <ImgIconFlag src={FlagBrasil} alt='Bandeira-Brasil' />
+            <ImgIconFlag src={FlagEua} alt='Bandeira-Estados-Unidos' />
+        </DivIcons>
     </NavbarContainer>
   )
 }

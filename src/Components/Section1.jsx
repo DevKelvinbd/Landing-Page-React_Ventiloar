@@ -2,15 +2,12 @@ import styled from "styled-components"
 import ImgSection1 from "../assets/Images/img-section1.png"
 import ImgVentiladores from "../assets/Images/ventiladores.png"
 import NavBar from "./NavBar";
-import LogoVentiloar from '../assets/Images/LogoVentiloar.svg'
-import FlagBrasil from '../assets/Images/flag-brasil.svg'
-import FlagEua from '../assets/Images/flag-eua.svg'
 
 // Breakpoints padrão recomendados para React
 const breakpoints = {
     xs: '320px',         // Extra small devices (mobile phones, less than 600px)
     sm: '598px',       // Small devices (small tablets and large phones, 600px and up)
-    md: '960px',       // Medium devices (tablets, 960px and up)
+    md: '962px',       // Medium devices (tablets, 960px and up)
     lg: '1200px',      // Large devices (desktops, 1280px and up)
     xl: '1920px'       // Extra large devices (large desktops and TVs, 1920px and up)
   };
@@ -237,6 +234,9 @@ const DivImage = styled.div`
 `
 
 const ImagemS1 = styled.img`
+    width: auto;
+    height: auto;
+    
     transform: translateX(0rem); /* Ajuste o valor conforme necessário */
 
 
@@ -390,7 +390,7 @@ const Section1 = () => {
             </DivText>
 
             <DivImage>
-                <ImagemS1 src={ImgSection1} />
+                <ImagemS1 src={ImgSection1} alt="Imagem-Devan-Dias" />
             </DivImage>
         </DivSection1>
     </>

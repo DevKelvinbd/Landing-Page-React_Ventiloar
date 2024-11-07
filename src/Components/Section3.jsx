@@ -63,7 +63,7 @@ const DivText = styled.div`
 const Title = styled.h1`
     font-size: 2.5rem;
     text-align: left;
-    padding: 0 5em 0 5rem;  
+    padding: 0 5em 1rem 5rem;  
     margin: 0;
     line-height: 1;
     font-family: 'Impact', sans-serif;
@@ -76,12 +76,12 @@ const Title = styled.h1`
 
     /* Small devices (small tablets and large phones, 600px and up) */
     @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
-        padding: 1rem 3rem 0 3rem; 
+        padding: 1rem 3rem 1rem 3rem; 
     }
 
     /* Medium devices (tablets, 960px and up) */
     @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
-        padding: 0 2rem 0 3rem;   
+        padding: 0 2rem 1rem 3rem;   
     }
 `
 
@@ -91,7 +91,7 @@ const Paragraph = styled.p`
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     padding: 0 3em 0 5rem;  
-    margin: 1rem 0 0 0;
+    margin: 0rem 0 0 0;
     color: #ffffff;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
@@ -174,13 +174,17 @@ const Section2 = () => {
     <DivSection3>
        <DivText>
             <Title>Solução</Title>
-            <Paragraph>O <SpanColor>Sistema de Ventiladores em Série</SpanColor> não possui um motor individualmente em cada hélice, com um único motor central, é possível mover várias hélices, diminuindo assim o consumo de energia e consequentemente o preço na conta de luz.</Paragraph>
-            <Paragraph>Um grande diferencial do nosso produto é a <SpanColor>durabilidade</SpanColor>, queremos quebrar o tabu da <SpanColor>Obsolescência Programada</SpanColor>, na qual compramos um produto com data de validade para quebrar.</Paragraph>
-            <Paragraph>nossa proposta é levar para o cliente um produto funcional, durável, econômico e sustentável diminuindo em até <SpanColor>90% o consumo de energia</SpanColor> com ventiladores, e entregando uma qualidade de ventilação muito superior.</Paragraph>
+            <Paragraph>
+                O <SpanColor>Sistema de Ventiladores em Série</SpanColor> não possui um motor individualmente em cada hélice, com um único motor central, é possível mover várias hélices, diminuindo assim o consumo de energia e consequentemente o preço na conta de luz.
+                <span style={{ display: 'block', marginBottom: '1rem' }}></span>
+                Um grande diferencial do nosso produto é a <SpanColor>durabilidade</SpanColor>, queremos quebrar o tabu da <SpanColor>Obsolescência Programada</SpanColor>, na qual compramos um produto com data de validade para quebrar.
+                <span style={{ display: 'block', marginBottom: '1rem' }}></span>
+                Nossa proposta é levar para o cliente um produto funcional, durável, econômico e sustentável diminuindo em até <SpanColor>90% o consumo de energia</SpanColor> com ventiladores, e entregando uma qualidade de ventilação muito superior.
+            </Paragraph>
         </DivText>
 
         <DivImage>
-            <ImagemS3 src={ImgSection3} />
+            <ImagemS3 src={ImgSection3} alt="Imagem-Devan-Ventiladores" />
         </DivImage>
 
     </DivSection3>
