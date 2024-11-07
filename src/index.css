@@ -33,3 +33,20 @@ body {
   h1 {
     font-family: 'Impact', sans-serif;
   }
+
+  @font-face {
+    font-family: 'Impact';
+    src: url('./assets/Fontes/impact.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('./assets/Fontes/Roboto.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
