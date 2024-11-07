@@ -213,7 +213,7 @@ const Section5 = () => {
   return (
     <DivSection5>
         <DivText>
-            <Title>Nossos Diferenciais</Title>
+            <Title>Nossos<br />Diferenciais</Title>
         </DivText>
 
             <Div1Dif>
