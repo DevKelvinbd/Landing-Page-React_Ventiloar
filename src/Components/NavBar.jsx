@@ -25,7 +25,7 @@ const NavbarContainer = styled.nav`
     z-index: 1000; /* Garante que fique acima de outros elementos */
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        padding: 0 0 0 1rem;
+        padding: 0 0 0 1.5rem;
     }
 `;
 

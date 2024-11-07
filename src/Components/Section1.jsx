@@ -150,7 +150,7 @@ const Title = styled.h1`
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         text-align: left;
-        padding: 0 1rem 0 1rem;
+        padding: 0.5rem 2.5rem 0rem 2.5rem;
         margin-top: 3rem;
         z-index: 10;
         font-size: 3rem;
@@ -180,7 +180,7 @@ const Paragraph = styled.p`
     padding: 0 2rem 0 5rem;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        padding: 0 1rem 0 1rem;
+        padding: 0rem 2.5rem 0.5rem 2.5rem;
         z-index: 10;
         font-size: 1rem;
         text-align: left;
@@ -279,7 +279,7 @@ const Button = styled.button`
     };
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        margin: 0.5rem 1rem 0 1rem;
+        margin: 0.5rem 1rem 0 2.5rem;
         width: 60%;
 
 
