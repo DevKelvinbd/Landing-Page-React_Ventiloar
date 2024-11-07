@@ -144,6 +144,7 @@ const Title = styled.h1`
     line-height: 1;
     text-transform: uppercase;
     font-family: 'Impact', sans-serif;
+    color: #ffffff;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         text-align: left;
@@ -175,6 +176,7 @@ const Paragraph = styled.p`
     line-height: 1;
     font-weight: 400;
     padding: 0 2rem 0 5rem;
+    color: #ffffff;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         padding: 0rem 2.5rem 0.5rem 2.5rem;
