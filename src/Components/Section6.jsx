@@ -1,5 +1,9 @@
 import styled from "styled-components"
-import ImgLines from '../assets/Images/ImgLines.svg'
+// Fotos
+import FotoDevan from "../assets/Images/idealizador-Devan-Dias.jpg"
+import FotoKelvin from "../assets/Images/programador-Kelvin-Dias.jpg"
+import FotoSiqueira from "../assets/Images/social-media-Siqueira-Neto.jpg"
+
 
 // Breakpoints padrão recomendados para React
 const breakpoints = {
@@ -34,7 +38,7 @@ const breakpoints = {
   
 //   }
 
-const DivSection4 = styled.div`
+const DivSection6 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +46,7 @@ const DivSection4 = styled.div`
     height: 100vh; 
     background-color: #E1F0FD;
     flex-direction: column;
-    padding: 4rem 0 0rem 0;
+    // padding: 4rem 0 4rem 0;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         height: auto; 
@@ -50,19 +54,8 @@ const DivSection4 = styled.div`
 
     /* Small devices (small tablets and large phones, 600px and up) */
     @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
-        height: auto; 
-    
-    }
+        height: auto;
 
-    /* Medium devices (tablets, 960px and up) */
-    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
-        height: auto; 
-        
-    }
-
-    /* Large devices (desktops, 1280px and up) */
-    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
-    
     }
 `
 
@@ -72,7 +65,7 @@ const DivText = styled.div`
     align-items: center;
     flex-direction: column;
     width: 55%;
-    height: 100%;
+    height: auto;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         width: 90%; 
@@ -99,90 +92,139 @@ const DivText = styled.div`
     @media (min-width: ${breakpoints.xl}) {
     
     }
-
-    
 `
 
 const Title = styled.h1`
     text-align: center;
     font-size: 2.5rem;
     color: #000A35;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 2.5rem 0 1rem 0;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
         margin-top: 1.5rem;
     }
 `
 
-const Paragraph = styled.p`
-    font-size: 1.5rem;
-    color: #000000; 
-    margin: 0;
-    text-align: center;
-
-`
-
-const Quote = styled.p`
-    font-style: italic;
-    text-align: center;
-    font-size: 1.1rem;
-    color: #000000;
-    margin: 1rem 0;
-`
-
-const SpanColor = styled.span`
-    color: #000000;
-    font-weight: 700;
-`
-
-const ImagemLines = styled.img`
-    padding-top: 2rem;
-    width: 60%;
+const Div1Dif = styled.div`
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    width: 85%;
     height: auto;
-    object-fit: contain; /* Ajusta a imagem dentro da div */
+    flex-wrap: wrap
+    gap: 20px;
 
     @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-        max-width: 90%; 
+        grid-template-columns: 1fr; 
+        justify-items: center
     }
 
     /* Small devices (small tablets and large phones, 600px and up) */
     @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
-        max-width: 60%; 
-
+        grid-template-columns: repeat(1, 1fr); 
     }
 
     /* Medium devices (tablets, 960px and up) */
     @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
-        max-width: 40%; 
+        grid-template-columns: repeat(3, 1fr); 
 
     }
 
     /* Large devices (desktops, 1280px and up) */
     @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
-        width: 40%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+`
+
+const DivItems = styled.div`
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 3rem 1.5rem 3rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    // background-color: green;
+    text-align: center;
+`
+
+
+const TitleDif = styled.h1`
+  font-size: 2.5rem;
+  color: #000A35;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+`
+
+const ParagraphDif = styled.p`
+  font-size: 1.3rem;
+  color: #000A35;
+  margin: 0;
+`
+
+const ImgIdealizadores = styled.img`
+    width: 70%;
+    border-radius: 50%;
+
+    @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
+        width: 60%;
+
+    }
+
+    /* Small devices (small tablets and large phones, 600px and up) */
+    @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
+        width: 50%;
+
+    }
+
+    /* Medium devices (tablets, 960px and up) */
+    @media (min-width: ${breakpoints.md}) and (max-width: ${breakpoints.lg}) {
+        width: 80%;
+
+    }
+
+    /* Large devices (desktops, 1280px and up) */
+    @media (min-width: ${breakpoints.lg}) and (max-width: ${breakpoints.xl}) {
+        width: 70%;
     }
 
     /* Extra large devices (large desktops and TVs, 1920px and up) */
     @media (min-width: ${breakpoints.xl}) {
     
     }
-
 `
 
-const Section4 = () => {
+const Section6 = () => {
   return (
-    <DivSection4>
+    <DivSection6>
         <DivText>
-            <Title>O Mercado</Title>
-            <Paragraph>“A indústria <SpanColor>busca fazer ajustes para o tamanho do mercado</SpanColor> brasileiro do setor em 2023. São vendidos cerca de <SpanColor>18 milhões de ventiladores</SpanColor>”</Paragraph>
-            <Quote>Fonte: Folha de São Paulo, 2023</Quote>
-            <Title style={{marginTop: '1.5rem'}}>Potencial do Mercado</Title>
-            <Paragraph><SpanColor>3.754.000</SpanColor> clientes em potencial apenas <SpanColor>B2B apenas no Brasil</SpanColor></Paragraph>
+            <Title>Nossos<br /> Idealizadores</Title>
         </DivText>
-            <ImagemLines src={ImgLines} alt="Rede-Neural-Mundial" />
-    </DivSection4>
+
+            <Div1Dif>
+                <DivItems>
+                    <ImgIdealizadores src={FotoDevan} />
+                    <TitleDif>Francisco Dias</TitleDif>
+                   <ParagraphDif>(Inventor | Founder Projetação)</ParagraphDif>
+                </DivItems>
+
+                <DivItems>
+                    <ImgIdealizadores src={FotoKelvin} />
+                    <TitleDif>Kelvin Dias</TitleDif> 
+                   <ParagraphDif>(Desenvolvedor | Design)</ParagraphDif>
+                </DivItems>
+
+                <DivItems>
+                    <ImgIdealizadores src={FotoSiqueira} />
+                   <TitleDif>Siqueira Neto</TitleDif>
+                   <ParagraphDif>(Social Media | Videomaker)</ParagraphDif>
+                </DivItems>
+            </Div1Dif>
+
+
+    </DivSection6>
 
   )
 }
 
-export default Section4
+export default Section6
