@@ -75,6 +75,13 @@ const Container = styled.div`
     }
 `;
 
+const Heading = styled.h1`
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--primary);
+`;
+
 const SwiperContainer = styled(Swiper)`
   width: 100%;
   height: 60vh;
@@ -171,6 +178,7 @@ const Carrousel = () => {
   return (
     <CarrouselContainer>
       <Container>
+        <Heading>Eventos</Heading>
         <SwiperContainer
           effect="coverflow"
           grabCursor={true}

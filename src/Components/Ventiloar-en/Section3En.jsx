@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import ImgSection3 from '../assets/Images/ImgSection3.png'
+import ImgSection3 from '../../assets/Images/ImgSection3.png'
 
 const breakpoints = {
     xs: '320px',         // Extra small devices (mobile phones, less than 600px)
@@ -169,17 +169,17 @@ const ImagemS3 = styled.img`
     }
 `
 
-const Section2 = () => {
+const Section3En = () => {
   return (
     <DivSection3>
        <DivText>
-            <Title>Solução</Title>
+            <Title>Solution</Title>
             <Paragraph>
-                O <SpanColor>Sistema de Ventiladores em Série</SpanColor> não possui um motor individualmente em cada hélice, com um único motor central, é possível mover várias hélices, diminuindo assim o consumo de energia e consequentemente o preço na conta de luz.
+            The <SpanColor>Series Fan System</SpanColor> does not have an individual motor for each blade; with a single central motor, it can drive multiple blades, thereby reducing energy consumption and, consequently, lowering electricity costs.
                 <span style={{ display: 'block', marginBottom: '1rem' }}></span>
-                Um grande diferencial do nosso produto é a <SpanColor>durabilidade</SpanColor>, queremos quebrar o tabu da <SpanColor>Obsolescência Programada</SpanColor>, na qual compramos um produto com data de validade para quebrar.
+                A key differentiator of our product is its <SpanColor>durability</SpanColor>. We aim to break the taboo of <SpanColor>Planned Obsolescence</SpanColor>, where products are purchased with an expected expiration date to fail.
                 <span style={{ display: 'block', marginBottom: '1rem' }}></span>
-                Nossa proposta é levar para o cliente um produto funcional, durável, econômico e sustentável diminuindo em até <SpanColor>90% o consumo de energia</SpanColor> com ventiladores, e entregando uma qualidade de ventilação muito superior.
+                Our proposal is to provide the customer with a functional, durable, economical, and sustainable product, reducing <SpanColor>energy consumption by up to 90%</SpanColor> with fans while delivering superior ventilation quality.
             </Paragraph>
         </DivText>
 
@@ -191,4 +191,4 @@ const Section2 = () => {
   )
 }
 
-export default Section2
+export default Section3En

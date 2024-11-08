@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Carrousel from "./Carrousel/Carrousel";
+import Carrousel from "../Carrousel/Carrousel";
 // Fotos
 
 // Breakpoints padrão recomendados para React
@@ -54,15 +54,24 @@ const DivSection7 = styled.div`
         height: auto;
 
     }
+ `
+
+ const Heading = styled.h1`
+//  padding: 1rem 0;
+  margin: 0;
+ font-size: 2.5rem;
+ text-align: center;
+ color: #000A35;
 `
 
-const Section7 = () => {
+const Section7En = () => {
   return (
     <DivSection7>
+       <Heading>Events</Heading>
        <Carrousel />
     </DivSection7>
 
   )
 }
 
-export default Section7
+export default Section7En

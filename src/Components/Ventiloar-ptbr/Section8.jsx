@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import { forwardRef } from 'react';
 
 const breakpoints = {
-  xs: '320px',         // Extra small devices (mobile phones, less than 600px)
-  sm: '598px',       // Small devices (small tablets and large phones, 600px and up)
-  md: '960px',       // Medium devices (tablets, 960px and up)
-  lg: '1200px',      // Large devices (desktops, 1280px and up)
-  xl: '1920px'       // Extra large devices (large desktops and TVs, 1920px and up)
+  xs: '320px',
+  sm: '598px',
+  md: '960px',
+  lg: '1200px',
+  xl: '1920px'
 };
 
 const DivSection8 = styled.div`
@@ -18,14 +19,6 @@ const DivSection8 = styled.div`
   height: 100vh;
   background-color: #E1F0FD;
   flex-direction: column;
-  
-  @media (min-width: ${breakpoints.xs}) and (max-width: ${breakpoints.sm}) {
-    
-  }
-  
-  @media (min-width: ${breakpoints.sm}) and (max-width: ${breakpoints.md}) {
-    
-  }
 `;
 
 const DivForms = styled.div`
@@ -37,14 +30,12 @@ const DivForms = styled.div`
   align-items: center;
 `;
 
-// Estilização do título
 const Title = styled.h1`
   font-size: 3rem;
   color: #000A35;
   margin-bottom: 1rem;
 `;
 
-// Estilização do formulário
 const Form = styled.form`
   display: flex;
   flex-direction: column;
@@ -53,7 +44,6 @@ const Form = styled.form`
   max-width: 600px;
 `;
 
-// Estilização dos campos de input
 const Input = styled.input`
   width: 100%;
   padding: 0.8rem;
@@ -68,7 +58,6 @@ const Input = styled.input`
   }
 `;
 
-// Estilização do textarea
 const TextArea = styled.textarea`
   width: 100%;
   padding: 0.8rem;
@@ -84,7 +73,6 @@ const TextArea = styled.textarea`
   }
 `;
 
-// Estilização do botão de submit
 const SubmitButton = styled(Input).attrs({ type: 'submit' })`
   background-color: #000A35;
   color: white;
@@ -101,19 +89,44 @@ const SubmitButton = styled(Input).attrs({ type: 'submit' })`
   }
 
   &:disabled {
-    background-color: #ccc;
+    background-color: #000A35;
     cursor: not-allowed;
+    color: #ffffff;
   }
 `;
 
-const Section8 = () => {
+const Section8 = forwardRef((props, ref) => {
+  
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  
+  const isFormValid = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return (
+      formData.name.trim() &&
+      emailRegex.test(formData.email) &&
+      formData.message.length >= 10
+    );
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    
+    if (!isFormValid()) {
+      alert('Por favor, preencha todos os campos corretamente.');
+      return;
+    }
 
-    // Verificar se as variáveis de ambiente estão sendo carregadas
     if (!import.meta.env.VITE_SERVICE_ID || !import.meta.env.VITE_TEMPLATE_ID || !import.meta.env.VITE_PUBLIC_KEY) {
       console.error('Variáveis de ambiente ausentes. Por favor, verifique seu arquivo .env.');
       return;
@@ -133,24 +146,46 @@ const Section8 = () => {
     } catch (error) {
       alert('Falha ao enviar a mensagem. Por favor, tente novamente mais tarde.');
       console.error(error.text);
-    } finally {
-      setIsSending(false);
     }
   };
 
   return (
-    <DivSection8>
+    <DivSection8 ref={ref}>
       <DivForms>
         <Title>Contato</Title>
-        <Form className="cf" ref={form} onSubmit={sendEmail}>
-          <Input type="text" placeholder="Nome" name="from_name" aria-label="Name" />
-          <Input type="email" placeholder="Email" name="reply_to" aria-label="Email address" />
-          <TextArea name="message" placeholder="Mensagem" rows="4" aria-label="Message" />
-          <SubmitButton value="Enviar" disabled={isSending} />
+        <Form ref={form} onSubmit={sendEmail}>
+          <Input
+            type="text"
+            placeholder="Nome"
+            name="name"
+            aria-label="Name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <Input
+            type="email"
+            placeholder="Email"
+            name="email"
+            aria-label="Email address"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <TextArea
+            name="message"
+            placeholder="Mensagem"
+            rows="4"
+            aria-label="Message"
+            value={formData.message}
+            onChange={handleChange}
+          />
+          <SubmitButton
+            value="Enviar mensagem"
+            disabled={isSending || !isFormValid()}
+          />
         </Form>
       </DivForms>
     </DivSection8>
   );
-};
+});
 
 export default Section8;

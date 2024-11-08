@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import ImgSection1 from "../assets/Images/img-section1.png"
-import ImgVentiladores from "../assets/Images/ventiladores.png"
+import ImgSection1 from "../../assets/Images/img-section1.png"
+import ImgVentiladores from "../../assets/Images/ventiladores.png"
 import NavBar from "./NavBar";
 
 // Breakpoints padrão recomendados para React
@@ -137,7 +137,7 @@ const DivText = styled.div`
     `
 
 const Title = styled.h1`
-    font-size: 3.7rem;
+    font-size: 4.3rem;
     text-align: left;
     padding: 0 2rem 0 5rem;
     margin: 0;
@@ -373,7 +373,7 @@ const ImgIconFlag = styled.img`
 
 `;
 
-const Section1 = () => {
+const Section1En = ({scrollToSection8}) => {
   return (
     <>  
         <DivSection1>
@@ -386,9 +386,9 @@ const Section1 = () => {
                     <ImgIconFlag src={FlagEua} />
                 </Icons>
             </NavLinks> */}
-                <Title>A solução que reduz seu consumo de energia em 90%</Title>
-                <Paragraph>Uma introdução ao Sistema de Ventiladores em Série e sua inovação no mercado,<SpanColor> revolucionando a Ventilação com Economia e Sustentabilidade</SpanColor></Paragraph>
-                <Button>Entrar em contato</Button>
+                <Title>The solution that reduces your energy consumption by 90%</Title>
+                <Paragraph>An introduction to the Series Fan System and its innovation in the market,<SpanColor> revolutionizing ventilation with efficiency and sustainability.</SpanColor></Paragraph>
+                <Button onClick={scrollToSection8}>Get in touch</Button>
             </DivText>
 
             <DivImage>
@@ -399,4 +399,4 @@ const Section1 = () => {
   )
 }
 
-export default Section1
+export default Section1En
