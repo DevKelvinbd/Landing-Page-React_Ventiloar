@@ -222,22 +222,22 @@ const Carrousel = () => {
         {/* Faixa animada com logos */}
         <DivAnimadoEvento>
           <MarqueeInner>
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
             {/* Repetição para continuidade da animação */}
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
-            <SiaraTechImg src={StsLogo} />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
+            <SiaraTechImg src={StsLogo} alt="Logo-Siará-Tech" />
           </MarqueeInner>
         </DivAnimadoEvento>
       </Container>
