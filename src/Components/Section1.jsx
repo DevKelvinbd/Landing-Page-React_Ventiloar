@@ -388,7 +388,7 @@ const Section1 = () => {
             </NavLinks> */}
                 <Title>A solução que reduz seu consumo de energia em 90%</Title>
                 <Paragraph>Uma introdução ao Sistema de Ventiladores em Série e sua inovação no mercado,<SpanColor> revolucionando a Ventilação com Economia e Sustentabilidade</SpanColor></Paragraph>
-                <Button>Conheça sobre</Button>
+                <Button>Entrar em contato</Button>
             </DivText>
 
             <DivImage>

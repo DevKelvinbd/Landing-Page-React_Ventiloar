@@ -6,6 +6,7 @@ import Section4 from '../../Components/Section4'
 import Section5 from '../../Components/Section5'
 import Section6 from '../../Components/Section6'
 import Section7 from '../../Components/Section7'
+import Section8 from '../../Components/Section8'
 
 const Ventiloar = () => {
   return (
@@ -17,6 +18,7 @@ const Ventiloar = () => {
         <Section5 />
         <Section6 />
         <Section7 />
+        <Section8 />
     </>
   )
 }
