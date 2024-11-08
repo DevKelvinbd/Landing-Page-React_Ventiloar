@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import ImgSection2 from '../assets/Images/ImgSection2.png'
+import ImgSection2 from '../../assets/Images/ImgSection2.png'
 
 const breakpoints = {
     xs: '320px',         // Extra small devices (mobile phones, less than 600px)
@@ -209,7 +209,7 @@ const Spacing = styled.div`
     height: 1rem;
 `
 
-const Section2 = () => {
+const Section2En = () => {
   return (
     <DivSection2>
         <DivImage>
@@ -217,15 +217,15 @@ const Section2 = () => {
         </DivImage>
 
         <DivText>
-            <Title>Sobre</Title>
+            <Title>Abouts</Title>
             <Paragraph>
-                A <SpanColor>Ventiloar</SpanColor> trata-se de um <SpanColor>Sistema de Ventiladores em Série</SpanColor> que funciona com apenas 1 motor para várias hélices, movidos através de caixas de transmissão e cabos.
+                The <SpanColor>Ventiloar</SpanColor> is a <SpanColor>Series Fan System</SpanColor> that operates with only one motor for multiple blades, driven by transmission boxes and cables.
                 <span style={{ display: 'block', marginBottom: '1rem' }}></span>
-                Uma solução muito <SpanColor>econômica</SpanColor> na aquisição dos equipamentos, instalação e <SpanColor>consumo de energia elétrica.</SpanColor>
+                A highly <SpanColor>economical</SpanColor> solution in terms of equipment acquisition, installation, and <SpanColor>electricity consumption.</SpanColor>
                 <span style={{ display: 'block', marginBottom: '1rem' }}></span>
-                Conversando com diversos empresários no Ceará, percebemos uma dor muito grande no setor de ventilação, academias que compram 10 ventiladores no início do ano, chegam no final com 4 ou 5, muitos acabam queimando, e precisam ser trocados.
+                Speaking with various business owners in Ceará, we noticed a significant pain point in the ventilation sector: gyms that purchase 10 fans at the beginning of the year often end up with only 4 or 5 by the end, as many burn out and need to be replaced.
                 <span style={{ display: 'block', marginBottom: '1rem' }}></span>
-                Percebemos que as empresas <SpanColor>não colocam a quantidade adequada de ventiladores</SpanColor> no seu espaço, por medo do consumo excessivo da energia elétrico, resultando em um ambiente quente, com empresários frustrados e clientes insatisfeitos pelo mal serviço prestado no ambiente.
+                We noticed that businesses <SpanColor>do not install the adequate number of fans</SpanColor> in their spaces due to fears of excessive electricity consumption. This results in a hot environment, leaving business owners frustrated and clients dissatisfied with the poor service provided in the space.
             </Paragraph>
             
         </DivText>
@@ -234,4 +234,4 @@ const Section2 = () => {
   )
 }
 
-export default Section2
+export default Section2En

@@ -1,11 +1,11 @@
 import styled from "styled-components"
 // Ícones
-import Icone1 from "../assets/Images/Icone1.svg"
-import Icone2 from "../assets/Images/Icone2.svg"
-import Icone3 from "../assets/Images/Icone3.svg"
-import Icone4 from "../assets/Images/Icone4.svg"
-import Icone5 from "../assets/Images/Icone5.svg"
-import Icone6 from "../assets/Images/Icone6.svg"
+import Icone1 from "../../assets/Images/Icone1.svg"
+import Icone2 from "../../assets/Images/Icone2.svg"
+import Icone3 from "../../assets/Images/Icone3.svg"
+import Icone4 from "../../assets/Images/Icone4.svg"
+import Icone5 from "../../assets/Images/Icone5.svg"
+import Icone6 from "../../assets/Images/Icone6.svg"
 
 // Breakpoints padrão recomendados para React
 const breakpoints = {
@@ -209,48 +209,48 @@ const ParagraphDif = styled.p`
   margin: 0;
 `
 
-const Section5 = () => {
+const Section5En = () => {
   return (
     <DivSection5>
         <DivText>
-            <Title>Nossos<br />Diferenciais</Title>
+            <Title>Our<br />Differentials</Title>
         </DivText>
 
             <Div1Dif>
                 <DivItems>
                    <Image src={Icone1} alt="Icone de Sifrão ($)" />
-                   <TitleDif>Economia na conta de luz</TitleDif>
-                   <ParagraphDif>(Chegando a mais de 90%)</ParagraphDif>
+                   <TitleDif>Savings on the electricity bill</TitleDif>
+                   <ParagraphDif>(Reaching over 90%)</ParagraphDif>
                 </DivItems>
 
                 <DivItems>
                     <Image src={Icone2} alt="Icone de Ferramentas" />
-                    <TitleDif>Fácil manutenção e limpeza</TitleDif>
-                   <ParagraphDif>(Apenas lubrificação e pode ser lavado)</ParagraphDif>
+                    <TitleDif>Easy maintenance and cleaning</TitleDif>
+                   <ParagraphDif>(Only lubrication needed and can be washed)</ParagraphDif>
                 </DivItems>
 
                 <DivItems>
                     <Image src={Icone3} alt="Icone de Som" /> 
-                    <TitleDif>Menor poluição sonora</TitleDif> 
-                   <ParagraphDif>(Apenas um motor que ainda pode ser externo)</ParagraphDif>
+                    <TitleDif>Lower noise pollution</TitleDif> 
+                   <ParagraphDif>(Only one motor, which can even be external)</ParagraphDif>
                 </DivItems>
 
                 <DivItems>
                    <Image src={Icone4} alt="Icone Ampulheta" />
-                   <TitleDif>Robustez e durabilidade</TitleDif>
-                   <ParagraphDif>(Chegando a mais de 90%)</ParagraphDif>
+                   <TitleDif>Robustness and durability</TitleDif>
+                   <ParagraphDif>(Reaching over 90%)</ParagraphDif>
                 </DivItems>
 
                 <DivItems>
                     <Image src={Icone5} alt="Icone Ferramentas de Instalação" />
-                    <TitleDif>Fácil instalação</TitleDif>
-                   <ParagraphDif>(Apenas lubrificação e pode ser lavado)</ParagraphDif>
+                    <TitleDif>Easy installation</TitleDif>
+                   <ParagraphDif>(Only lubrication needed and can be washed)</ParagraphDif>
                 </DivItems>
 
                 <DivItems>
                     <Image src={Icone6} alt="Icone de Reciclável" /> 
-                    <TitleDif>Amigo do meio ambiente</TitleDif> 
-                   <ParagraphDif>(Apenas um motor que ainda pode ser externo)</ParagraphDif>
+                    <TitleDif>Environmentally friendly</TitleDif> 
+                   <ParagraphDif>(Only one motor, which can even be external)</ParagraphDif>
                 </DivItems>
             </Div1Dif>
 
@@ -260,4 +260,4 @@ const Section5 = () => {
   )
 }
 
-export default Section5
+export default Section5En
