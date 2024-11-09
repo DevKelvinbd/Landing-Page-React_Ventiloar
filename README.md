@@ -53,16 +53,5 @@ Este projeto faz parte do portfólio de Kelvin Barros Dias e não está aberto p
 ## Contato
 **Instagram**: [Ventiloar](https://www.instagram.com/ventiloar)
 
-<<<<<<< HEAD
-=======
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 6672a1a (Primeiro commit: adicionar arquivos iniciais do site Ventiloar)
-=======
->>>>>>> f14fce612339114aac3d8e8b81e737d48c11cc9a
+## Site
+**URL:**www.ventiloar.com
