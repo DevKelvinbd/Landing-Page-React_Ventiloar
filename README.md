@@ -54,4 +54,4 @@ Este projeto faz parte do portfólio de Kelvin Barros Dias e não está aberto p
 **Instagram**: [Ventiloar](https://www.instagram.com/ventiloar)
 
 ## Site
-**URL:**www.ventiloar.com
+www.ventiloar.com
