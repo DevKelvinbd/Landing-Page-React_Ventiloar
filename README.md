@@ -1,4 +1,4 @@
-# Ventiloar - Sistema de Ventiladores em Série
+# Landing Page - Startup Ventiloar - Sistema de Ventiladores em Série
 
 Bem-vindo ao repositório do site oficial da **Ventiloar**. Este projeto é uma página de apresentação (SPA/Landing Page) desenvolvida para apresentar a inovação da Ventiloar no setor de ventilação industrial e comercial.
 
